@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '4_^+%qki05e*3u6w&t=x_1119rhj1=#!i8pnnb+y9y9h6a!3u0'
+SECRET_KEY = '7%-y1z+qft@^e1nvze9bokx(&p)a7l#7obsw*i9@8jnnfr=8r%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -74,9 +74,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+     'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pimps-site',
+        'HOST': 'localhost',
+        'PORT': 5432
     }
 }
 
