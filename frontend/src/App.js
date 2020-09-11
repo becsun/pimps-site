@@ -1,8 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
 import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
-import StaffList from './components/staffs/StaffDetail'
+import StaffList from './components/staffs/StaffList'
 import StaffDetail from './components/staffs/StaffDetail'
 import ServiceList from './components/services/ServiceList'
 import ProductList from './components/products/ProductList'

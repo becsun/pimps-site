@@ -1,9 +1,15 @@
 import React from 'react'
+import { Link, withRouter } from 'react-router-dom'
 
-const Navbar = () => {
-  return (
-    <h1>Hello World</h1>
-  )
+class Navbar extends React.Component {
+  state = {
+
+  }
+  render(){
+
+    return (
+      <h1>hi</h1>
+    )
+  }
 }
-
-export default Navbar
+export default withRouter(Navbar)
