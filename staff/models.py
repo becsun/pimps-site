@@ -6,9 +6,10 @@ class Staff(models.Model):
     bio = models.CharField(max_length=200)
     image = models.CharField(max_length=30)
     favcut = models.CharField(max_length=30, null=True)
-    # services = models.ManyToMany(
-    #     'services.Service',
-    #     related_name='staffs'
-    # )
+    service = models.ManyToManyField(
+        'service.Service',
+        related_name='staffs'
+    )
+
     def __str__(self):
         return f'{self.name}'
