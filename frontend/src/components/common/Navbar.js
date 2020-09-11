@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, withRouter } from 'react-router-dom'
+// import { Link, withRouter } from 'react-router-dom'
 
 class Navbar extends React.Component {
   state = {
@@ -8,8 +8,9 @@ class Navbar extends React.Component {
   render(){
 
     return (
-      <h1>hi</h1>
+      <h1>hello</h1>
+
     )
   }
 }
-export default withRouter(Navbar)
+export default (Navbar)

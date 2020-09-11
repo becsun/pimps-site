@@ -1,9 +1,27 @@
 import React from 'react'
 
-const ProductDetail = () => {
-  return (
-    <h1>Hello World</h1>
-  )
-}
+import { Link } from 'react-router-dom'
+
+const ProductDetail = ({ name, brand, image, id, use, hairtype }) => (
+  <div className="column is-one-quarter-desktop is-one-third-tablet is-fullwidth">
+    <Link to={`/staffs/${id}`}>
+      <div className="card">
+        <div className="card-header">
+          <h4 className="card-header-title">{name}</h4>
+        </div>
+        <div className="card-image">
+          <figure className="image image is-1by1">
+            <img src={image} alt={name} loading="lazy" width="255" height="255" />
+          </figure>
+        </div>
+        <div className="card-content">
+          <h5 className="">{brand}</h5>
+          <h5 className="">{use}</h5>
+          <h5 className="">{hairtype}</h5>
+        </div>
+      </div>
+    </Link>
+  </div>
+)
 
 export default ProductDetail

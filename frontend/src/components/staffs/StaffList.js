@@ -1,12 +1,10 @@
 import React from 'react'
 
-
 import { getAllStaff } from '../lib/api'
-
+import StaffDetail from './StaffDetail'
 
 class StaffList extends React.Component {
   state = { staffs: [] }
-
 
   async componentDidMount() {
     try {
@@ -15,13 +13,20 @@ class StaffList extends React.Component {
     } catch (err){
       console.log(err)
     }
+    console.log()
     console.log(this.state.staffs)
   }
   render() {
     return (
-
-      
-      <h1>hi</h1>
+      <section className="section">
+        <div className="container">
+          <div className="columns is-multiline">
+            {this.state.staffs.map(staff => (
+              <StaffDetail key={staff._id} {...staff}/>
+            ))}
+          </div>
+        </div>
+      </section>
 
     )
   }
