@@ -15,9 +15,12 @@ class StaffList extends React.Component {
     }
     console.log()
     console.log(this.state.staffs)
+
   }
   render() {
+    console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN)
     return (
+
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
