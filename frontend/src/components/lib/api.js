@@ -20,7 +20,7 @@ export const getAllProducts = () => {
   return axios.get(`${baseUrl}/products`)
 }
 
-export const getSingleProducts = id => {
+export const getSingleProduct = id => {
   return axios.get(`${baseUrl}/products/${id}`)
 }
 
@@ -28,4 +28,8 @@ export const getSingleProducts = id => {
 //---------
 export const getAllServices = () => {
   return axios.get(`${baseUrl}/services`)
+}
+
+export const getSingleService = id => {
+  return axios.get(`${baseUrl}/services/${id}`)
 }

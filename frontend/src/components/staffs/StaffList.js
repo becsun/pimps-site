@@ -11,14 +11,14 @@ class StaffList extends React.Component {
       const res = await getAllStaff()
       this.setState({ staffs: res.data })
     } catch (err){
-      console.log(err)
+      this.props.history.push('/*')
     }
     console.log()
     console.log(this.state.staffs)
 
   }
   render() {
-    console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN)
+
     return (
 
       <section className="section">

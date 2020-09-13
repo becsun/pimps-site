@@ -35,6 +35,7 @@ class ContactPage extends React.Component {
             10am – 8pm weekdays
             10am – 6pm weekends</h2>
         <a href>Terms and Conditions</a>
+  
       </section>
 
     )

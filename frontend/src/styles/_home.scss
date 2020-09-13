@@ -1,4 +1,6 @@
-.hero.is-info.is-large.homepage{
-  background: url("../styles/images/Pimps-115.jpg");
+.hero.is-link.is-fullheight-with-navbar.homepage{
+  background: url("../styles/images/homepage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y:15%;
 }
