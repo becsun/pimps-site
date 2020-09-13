@@ -1,73 +1,37 @@
 import React from 'react'
 
-import { getSingleService } from '../lib/api'
+import { getAllServices } from '../lib/api'
+import StaffDetail from '../staffs/StaffDetail'
 
 class ServiceList extends React.Component {
   state = {
-    service: null
+    services: []
   }
   async componentDidMount() {
-    const serviceID = this.props.match.params.id
     try {
-      const res = await getSingleService(serviceID)
-      this.setState({ service: res.data })
+      const res = await getAllServices()
+      this.setState({ services: res.data })
     } catch (err){
       console.log(err)
     }
-    console.log(this.state.service)
+    console.log(this.state.services)
+    console.log(this.state.services[3])
   }
 
-  
+
   render(){
     return (
       <>
         <section className="hero is-primary is-medium servicelistpage">
           <div className="hero-body">
-            <div className="container">
-              <h1 className="title ">
-            Services
-              </h1>
-              <h2 className="subtitle">
-            Styling
-              </h2>
-              <h2 className="subtitle">
-              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-              </h2>
-            </div>
+
           </div>
         </section>
-
         <div>
-          <div className="container">
-            <h2 className="title ">
-            Styling
-            </h2>
-          </div>
+          {/* {this.state.services.map(service => (
+            key={service.id} {services.styling}
+          ))} */}
         </div>
-        <div>
-          <div className="container">
-            <h2 className="title ">
-            Colour
-            </h2>
-          </div>
-        </div>
-        <div>
-          <div className="container">
-            <h2 className="title ">
-            Treatments
-            </h2>
-          </div>
-        </div>
-        <div>
-          <div className="container">
-            <h2 className="title ">
-            Kerastraight
-            </h2>
-          </div>
-        </div>
-
-
-
       </>
 
 
