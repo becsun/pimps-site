@@ -2,11 +2,11 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <section className="hero is-link is-fullheight-with-navbar homepage">
+    <section className="hero is-link is-fullheight-with-navbar homepage mobile-fullscreen">
       <div className="hero-body">
         <div className="container">
           <p className="title">
-           
+
           </p>
         </div>
       </div>

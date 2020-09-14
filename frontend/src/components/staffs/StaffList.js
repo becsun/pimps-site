@@ -47,7 +47,7 @@ class StaffList extends React.Component {
     const filteredStaff = staffs.filter(staff => {
       return filteredServices.includes(staff.id)
     })
-    this.setState({filteredStaff})
+    this.setState({ filteredStaff })
   }
 
 
@@ -56,6 +56,18 @@ class StaffList extends React.Component {
     if (!this.state.staffs) return null
     return (
       <section className="section">
+        <section className="hero">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title">
+        Meet The Crew
+              </h1>
+              <h2 className="subtitle">
+        Hero subtitle
+              </h2>
+            </div>
+          </div>
+        </section>
         <StaffForm handleChange={this.handleChange}/>
         <div className="container">
           <div className="columns is-multiline">
@@ -68,7 +80,6 @@ class StaffList extends React.Component {
           </div>
         </div>
       </section>
-
     )
   }
 }

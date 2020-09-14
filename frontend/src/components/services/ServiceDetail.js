@@ -1,8 +1,9 @@
 import React from 'react'
 
-const ServiceDetail = () => {
+const ServiceDetail= ({name,price }) => {
   return (
-    <h1>Hello World</h1>
+    <h1>{name} {price}</h1>
+
   )
 }
 

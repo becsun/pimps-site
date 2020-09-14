@@ -1,14 +1,17 @@
-@import '~bulma/bulma.sass';
+
 @import'home';
 @import'contactPage';
 @import'serviceList';
+@import'staffForm';
 
 
-.img.logopic{
-  background: url("../styles/images/banner-logopng__567x417_q85_crop_upscale.png");
+.img.logo{
+  background-image: url("../styles/images/banner-logopng__567x417_q85_crop_upscale.png");
 }
 
-.staffimages{
-height: 20px;
-width: 20px;
-}
+// .card-content {
+//   margin-top: auto;
+// }
+
+
+@import '~bulma/bulma.sass';
