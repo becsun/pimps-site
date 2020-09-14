@@ -9,7 +9,7 @@ const StaffDetail = ({ name, favcut, image, id, bio, role }) => (
           <h4 className="card-header-title">{name}</h4>
         </div>
         <div className="card-image">
-          <figure className="image image is-1by1">
+          <figure className="image">
             <img className="staffimages" src={image} alt={name} loading="lazy" width="255" height="255" />
           </figure>
         </div>
