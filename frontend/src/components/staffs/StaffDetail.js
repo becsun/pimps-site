@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const StaffDetail = ({ name, favcut, image, id, bio, role }) => (
   <div className="column is-one-quarter-desktop is-one-third-tablet is-fullwidth">
     <Link to={`/staffs/${id}`}>
-      <div className="card">
-        <div className="card-header">
+      <div className="card outline box-radius">
+        <div className="card-header box-radius">
           <h4 className="card-header-title">{name}</h4>
         </div>
         <div className="card-image">

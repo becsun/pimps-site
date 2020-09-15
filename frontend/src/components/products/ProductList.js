@@ -40,10 +40,10 @@ class ProductList extends React.Component {
       if (!this.state.products) return null
       // if (!this.state.filteredProducts) return null
       return (
-        <div>
-          <h1>Products we recommend for:</h1>
+        <div className="productbackground">
+          <h1 className="productbackground">Products we recommend for:</h1>
           <ProductForm handleChange={this.handleChange}/>
-          <section className="section">
+          <section className="section has-background-black">
             <div className="container">
               <div className="columns is-multiline">
                 {/*To filter the products according to the hair type. */}

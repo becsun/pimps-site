@@ -21,7 +21,7 @@ class ServiceShow extends React.Component {
 
   render(){
     return (
-      <section className="hero 2is-primary servicelistpage">
+      <section className="hero 2is-primary servicelistpage has-background-black">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">

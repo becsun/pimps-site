@@ -23,7 +23,7 @@ class ProductShow extends React.Component {
     if (!this.state.product) return null
     console.log(product)
     return (
-      <section className="section">
+      <section className="section has-background-white">
         <div className="container">
           <h2 className="title has-text-centered">{product.name}</h2>
           <hr />

@@ -1,7 +1,7 @@
 import React from 'react'
 import MapGL, { Marker } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import { Link } from 'react-router-dom'
+import Footer from './Footer'
 
 
 class ContactPage extends React.Component {
@@ -20,34 +20,25 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <section>
-        <h1 className="contact">LOCATION</h1>
+      <section has-background-black>
+        <h1 className="contact productbackground">LOCATION</h1>
         {/* //put map on page */}
-        <MapGL
-          {...this.state.viewport}
-          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-          mapStyle='mapbox://styles/mapbox/dark-v10'
-          onViewportChange={this.onViewportChange}
-        >
-          <Marker
-            latitude={51.520073}
-            longitude={	-0.075212}
+        <div className="contact productbackground" >
+          <MapGL
+            {...this.state.viewport}
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+            mapStyle='mapbox://styles/mapbox/dark-v10'
+            onViewportChange={this.onViewportChange}
           >
-            <div className="marker" />
-          </Marker>
-        </MapGL>
-        <button onClick={this.handleZoomIn}>✚</button>
-        <button>−</button>
-        <h2> 14a Lamb Street Spitalfield, London E16EA </h2>
-        <h2> 0207 426 2121</h2>
-        <a href>london@pimpsandpinups.com</a>
-        <h2>Opening hours
-            10am – 8pm weekdays
-            10am – 6pm weekends</h2>
-
-        <Link to={'/terms'}>
-          <h2>Terms and Conditions</h2>
-        </Link>
+            <Marker
+              latitude={51.520073}
+              longitude={	-0.075212}
+            >
+              <div className="marker" />
+            </Marker>
+          </MapGL>
+        </div>
+        <Footer />
 
       </section>
 

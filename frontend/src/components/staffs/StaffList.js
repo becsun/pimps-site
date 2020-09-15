@@ -29,7 +29,11 @@ class StaffList extends React.Component {
   }
 
   handleChange = (event) =>{
-    this.filterServices(event.target.value)
+    if (event.target.value === 'any') {
+      this.setState({ filteredStaff: null })
+    } else {
+      this.filterServices(event.target.value)
+    }
   }
 
   filterServices = (selectedValue) => {
@@ -51,11 +55,11 @@ class StaffList extends React.Component {
   }
 
 
-
   render() {
     if (!this.state.staffs) return null
+    console.log(this.state.staffs)
     return (
-      <section className="section">
+      <section className="section productbackground">
         <section className="hero">
           <div className="hero-body">
             <div className="container">

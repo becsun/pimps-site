@@ -1,15 +1,22 @@
 import React from 'react'
+// import { getAllStaff } from '../lib/api'
 
 
-const StaffForm = ({ handleChange }) => {
+const StaffForm = ({ handleChange}) => {
   return (
     <div className="control is-right">
       <div className="select is-dark is-multiple bar is-rounded">
-        <select onChange={handleChange }>
-          <option className="searchText">Click On An Option To Find The Right Stylist For You!</option>
-          <option onChange={handleChange} value="colour">Colour</option>
-          <option value="cut">cut</option>
-          <option value="treatment">treatment</option>
+        <select onChange={ handleChange }>
+          <option onChange={ handleChange } value="any" className="searchText">Click On An Option To Find The Right Stylist For You!</option>
+          {/* <option onChange={handleChange} value="colour">Colour</option> */}
+          <option onChange={handleChange} value="haircut">haircut</option>
+          <option onChange={handleChange} value="styling">styling</option>
+          <option onChange={handleChange} value="bleach">bleach</option>
+          <option onChange={handleChange} value="balayage">balayage</option>
+          <option onChange={handleChange} value="treatment">treatment</option>
+          <option onChange={handleChange} value="tint">tint</option>
+          <option onChange={handleChange} value="kerastraight">kerastraight</option>
+          <option onChange={handleChange} value="highlights">highlights</option>
         </select>
       </div>
     </div>

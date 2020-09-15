@@ -1,4 +1,10 @@
 .navbar-item{
-  font-family: 'Monoton', cursive;
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
+  font-weight: 700;
+}
+
+
+.a.navbar-item.is-active{
+  background: #51fe00e0;
 }

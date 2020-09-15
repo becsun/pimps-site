@@ -1,10 +1,12 @@
-
+@import '~bulma/bulma.sass';
 @import'home';
+@import'productShow';
 @import'contactPage';
 @import'serviceList';
 @import'staffForm';
 @import'navbar';
-@import'staffDetail';
+
+
 
 .card {
   height: 100%;
@@ -12,7 +14,7 @@
   flex-direction: column
 }
 .card-image{
-  background-color: darkgray;
+  background-color: white;
 }
 
 .img.logo{
@@ -20,7 +22,18 @@
 }
 
 
-$font-family: 'Monoton', cursive;
 
 
-@import '~bulma/bulma.sass';
+.navbar.isgreen {
+  background: #51fe00e0;
+}
+
+.productbackground{
+  background-color: black;
+}
+
+.section.has-background-black{
+  background-color: black;
+}
+
+$box-radius: 6px;
