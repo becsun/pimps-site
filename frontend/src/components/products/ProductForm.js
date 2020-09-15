@@ -13,7 +13,6 @@ const ProductForm = ({ handleChange }) => {
         </select>
       </div>
     </div>
-
   )
 }
 

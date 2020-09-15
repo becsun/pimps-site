@@ -1,8 +1,7 @@
 import React from 'react'
 import MapGL, { Marker } from 'react-map-gl'
-// import { NavigationControl } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-// import Terms from './Terms'
+import { Link } from 'react-router-dom'
 
 
 class ContactPage extends React.Component {
@@ -45,7 +44,10 @@ class ContactPage extends React.Component {
         <h2>Opening hours
             10am – 8pm weekdays
             10am – 6pm weekends</h2>
-        <a href>Terms and Conditions</a>
+
+        <Link to={'/terms'}>
+          <h2>Terms and Conditions</h2>
+        </Link>
 
       </section>
 

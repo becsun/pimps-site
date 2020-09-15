@@ -11,7 +11,9 @@ import ProductShow from './components/products/ProductShow'
 
 import ProductList from './components/products/ProductList'
 import ContactPage from './components/common/ContactPage'
+import Terms from './components/common/Terms'
 import ErrorPage from './components/common/ErrorPage'
+
 // import ServiceShow from './components/services/ServiceDetail'
 
 
@@ -28,6 +30,7 @@ const App = () => {
         <Route path ="/products" component={ProductList} />
         <Route path ="/services" component={ServiceShow} />
         <Route path ="/contact" component={ContactPage} />
+        <Route path ="/terms" component={Terms} />
         <Route path="/*" component={ErrorPage} />
       </Switch>
     </BrowserRouter>

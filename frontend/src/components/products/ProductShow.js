@@ -1,32 +1,28 @@
 import React from 'react'
 import { getSingleProduct } from '../lib/api'
-import ProductForm from './ProductForm'
-
 
 
 class ProductShow extends React.Component {
-  state = {
-    producst: null
+  state =  {
+    product: null
   }
 
-  async componentDidMount() {
-    //pulls the staff ID from URL bar
+  async componentDidMount(){
     const productID = this.props.match.params.id
     try {
       const res = await getSingleProduct(productID)
-      this.setState({ products: res.data })
+      this.setState({ product: res.data })
       console.log(res.data)
     } catch (err){
       console.log(err)
     }
   }
 
-
-  render (){
+  render(){
     const { product } = this.state
     if (!this.state.product) return null
+    console.log(product)
     return (
-
       <section className="section">
         <div className="container">
           <h2 className="title has-text-centered">{product.name}</h2>
@@ -49,9 +45,9 @@ class ProductShow extends React.Component {
           </div>
         </div>
       </section>
-
     )
   }
 }
+
 
 export default ProductShow

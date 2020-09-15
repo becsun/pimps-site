@@ -1,8 +1,9 @@
 import React from 'react'
 
-import ProductDetail from './ProductDetail'
 import { getAllProducts } from '../lib/api'
+import ProductDetail from './ProductDetail'
 import ProductForm from './ProductForm'
+
 
 class ProductList extends React.Component {
   state = {
@@ -37,6 +38,7 @@ class ProductList extends React.Component {
 
     render() {
       if (!this.state.products) return null
+      // if (!this.state.filteredProducts) return null
       return (
         <div>
           <h1>Products we recommend for:</h1>
@@ -55,7 +57,6 @@ class ProductList extends React.Component {
             </div>
           </section>
         </div>
-
 
       )
     }
