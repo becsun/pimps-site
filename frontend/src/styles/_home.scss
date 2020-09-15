@@ -1,6 +1,15 @@
-.hero.is-link.is-fullheight-with-navbar.homepage{
+body{
+background-color: black;
+}
+
+.home{
+  // display: flex;
   background: url("../styles/images/homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y:15%;
+  background-position: center;
+  background-position-y: 30%;
+
 }
+
+

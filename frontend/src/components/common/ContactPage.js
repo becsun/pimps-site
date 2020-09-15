@@ -22,7 +22,7 @@ class ContactPage extends React.Component {
   render() {
     return (
       <section>
-        <h1 className="contact">Contacts</h1>
+        <h1 className="contact">LOCATION</h1>
         {/* //put map on page */}
         <MapGL
           {...this.state.viewport}

@@ -5,7 +5,9 @@ import { getAllProducts } from '../lib/api'
 import ProductForm from './ProductForm'
 
 class ProductList extends React.Component {
-  state = { products: [] }
+  state = {
+    products: null,
+    filteredProducts: null }
 
   async componentDidMount() {
     try {
@@ -18,25 +20,45 @@ class ProductList extends React.Component {
     console.log(this.state.products)
 
   }
-  render() {
-    return (
-      <div>
-        <h1>Products we recommend for:</h1>
-        <ProductForm />
-        <section className="section">
-          <div className="container">
-            <div className="columns is-multiline">
-              {this.state.products.map(product => (
-                <ProductDetail key={product._id} {...product}/>
-              ))}
-            </div>
-          </div>
-        </section>
-      </div>
 
-
-    )
+  handleChange = (event) =>{
+    this.filterProducts(event.target.value)
+    console.log(event.target.value)
   }
+
+
+    filterProducts = (selected) => {
+      const { products } = this.state
+      const filteredProducts = products.filter(product => {
+        return product.hairtype  === selected
+      })
+      this.setState({ filteredProducts })
+    }
+
+    render() {
+      if (!this.state.products) return null
+      return (
+        <div>
+          <h1>Products we recommend for:</h1>
+          <ProductForm handleChange={this.handleChange}/>
+          <section className="section">
+            <div className="container">
+              <div className="columns is-multiline">
+                {/*To filter the products according to the hair type. */}
+                {!this.state.filteredProducts && this.state.products.map(product => (
+                  <ProductDetail key={product._id} {...product}/>
+                ))}
+                {this.state.filteredProducts && this.state.filteredProducts.map(product => (
+                  <ProductDetail key={product._id} {...product}/>
+                ))}
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+      )
+    }
 }
 
 export default ProductList

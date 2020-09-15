@@ -3,15 +3,23 @@
 @import'contactPage';
 @import'serviceList';
 @import'staffForm';
+@import'navbar';
+@import'staffDetail';
 
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column
+}
+.card-image{
+  background-color: darkgray;
+}
 
 .img.logo{
   background-image: url("../styles/images/banner-logopng__567x417_q85_crop_upscale.png");
 }
 
-// .card-content {
-//   margin-top: auto;
-// }
+$font-family: 'Monoton', cursive;
 
 
 @import '~bulma/bulma.sass';

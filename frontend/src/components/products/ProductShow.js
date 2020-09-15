@@ -6,7 +6,7 @@ import ProductForm from './ProductForm'
 
 class ProductShow extends React.Component {
   state = {
-    product: null
+    producst: null
   }
 
   async componentDidMount() {
@@ -14,12 +14,13 @@ class ProductShow extends React.Component {
     const productID = this.props.match.params.id
     try {
       const res = await getSingleProduct(productID)
-      this.setState({ product: res.data })
+      this.setState({ products: res.data })
       console.log(res.data)
     } catch (err){
       console.log(err)
     }
   }
+
 
   render (){
     const { product } = this.state

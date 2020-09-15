@@ -18,23 +18,27 @@ class ServiceShow extends React.Component {
     console.log(this.state.services[3])
   }
 
-  // filterServices = (service) => {
-  //   const { services } = this.state
-
-  // }
 
   render(){
     return (
-
-      <section className="hero is-primary is-medium servicelistpage">
+      <section className="hero 2is-primary servicelistpage">
         <div className="hero-body">
-        </div>
-        <div>
-          {this.state.services.map(service => (
-            <ServiceDetail key={service._id} {...service} />
-          ))}
+          <div className="container">
+            <h1 className="title">
+        Hero title
+            </h1>
+            <h2 className="subtitle">
+        Hero subtitle
+            </h2>
+            <div>
+              {this.state.services.map(service => (
+                <ServiceDetail key={service._id} {...service} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
+
     )
   }
 }
