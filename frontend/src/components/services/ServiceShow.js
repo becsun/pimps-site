@@ -2,11 +2,20 @@ import React from 'react'
 
 import { getAllServices } from '../lib/api'
 import ServiceDetail from './ServiceDetail'
+import Footer from '../common/Footer'
 
 class ServiceShow extends React.Component {
   state = {
     services: []
+    // haircut: [],
+    // styling: [],
+    // highlights: [],
+    // bleach: [],
+    // tint: [],
+    // treatment: [],
+    // kerastraight: []
   }
+
   async componentDidMount() {
     try {
       const res = await getAllServices()
@@ -16,7 +25,10 @@ class ServiceShow extends React.Component {
     }
     console.log(this.state.services)
     console.log(this.state.services[3])
+    console.log(this.state.bleach)
   }
+
+
 
 
   render(){
@@ -34,6 +46,7 @@ class ServiceShow extends React.Component {
               {this.state.services.map(service => (
                 <ServiceDetail key={service._id} {...service} />
               ))}
+              <Footer />
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import MapGL, { Marker } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import Footer from './Footer'
+import Messages from './Messages'
 
 
 class ContactPage extends React.Component {
@@ -17,6 +18,8 @@ class ContactPage extends React.Component {
   }
 
   onViewportChange = viewport => this.setState({ viewport })
+
+  
 
   render() {
     return (
@@ -38,6 +41,7 @@ class ContactPage extends React.Component {
             </Marker>
           </MapGL>
         </div>
+        <Messages />
         <Footer />
 
       </section>

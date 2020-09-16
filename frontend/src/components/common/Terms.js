@@ -1,8 +1,10 @@
 import React from 'react'
 
+import Footer from '../common/Footer'
+
 const Terms = () => {
   return (
-    <section>
+    <section className="productbackground">
       <h1>SALON BOOKING TERMS & CONDITIONS</h1>
       <h2>IMPORTANT APPOINTMENT INFORMATION</h2>
       <p>IN ORDER FOR YOU TO HAVE A SAFE APPOINTMENT WITH US, PLEASE FOLLOW THESE GUIDELINES:
@@ -48,7 +50,7 @@ const Terms = () => {
       <p>
       11. IF YOU ARE UNHAPPY WITH ANY PART OF YOUR SERVICE, PLEASE INFORM YOUR STYLIST IMMEDIATELY WHO WILL ENDEAVOUR TO RECTIFY THE SITUATION.
       </p>
-
+      <Footer />
     </section>
 
   )

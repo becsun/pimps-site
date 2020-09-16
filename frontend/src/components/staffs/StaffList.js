@@ -3,6 +3,7 @@ import React from 'react'
 import { getAllStaff, getAllServices } from '../lib/api'
 import StaffDetail from './StaffDetail'
 import StaffForm from './StaffForm'
+import Footer from '../common/Footer'
 
 class StaffList extends React.Component {
   state = {
@@ -54,6 +55,8 @@ class StaffList extends React.Component {
     this.setState({ filteredStaff })
   }
 
+  
+
 
   render() {
     if (!this.state.staffs) return null
@@ -83,6 +86,7 @@ class StaffList extends React.Component {
             ))}
           </div>
         </div>
+        <Footer />
       </section>
     )
   }

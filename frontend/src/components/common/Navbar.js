@@ -20,8 +20,8 @@ componentDidUpdate(prevProps) {
 
 render() {
   return (
-    <nav className="navbar isgreen">
-      <div className="container">
+    <nav className="navbar isgreen ">
+      <div className="container ">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">Pimps & PinUps</Link>
           <span onClick={this.handleToggle} className={`navbar-burger ${this.state.isOpen ? 'is-active' : '' }`}>

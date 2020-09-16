@@ -3,6 +3,7 @@ import React from 'react'
 import { getAllProducts } from '../lib/api'
 import ProductDetail from './ProductDetail'
 import ProductForm from './ProductForm'
+import Footer from '../common/Footer'
 
 
 class ProductList extends React.Component {
@@ -55,6 +56,7 @@ class ProductList extends React.Component {
                 ))}
               </div>
             </div>
+            <Footer />
           </section>
         </div>
 

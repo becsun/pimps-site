@@ -5,6 +5,7 @@
 @import'serviceList';
 @import'staffForm';
 @import'navbar';
+@import'footer';
 
 
 
@@ -34,6 +35,9 @@
 
 .section.has-background-black{
   background-color: black;
+}
+.card-header-title{
+  text-align: center;
 }
 
 $box-radius: 6px;
