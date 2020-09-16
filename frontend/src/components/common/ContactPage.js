@@ -25,7 +25,7 @@ class ContactPage extends React.Component {
   render() {
     return (
       <section has-background-black>
-        <h1 className="contact productbackground">LOCATION</h1>
+        <h1 className="contactPage">LOCATION</h1>
         {/* //put map on page */}
         <div className="contact productbackground map" >
 

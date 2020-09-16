@@ -55,7 +55,7 @@ class StaffList extends React.Component {
     this.setState({ filteredStaff })
   }
 
-  
+
 
 
   render() {
@@ -63,15 +63,12 @@ class StaffList extends React.Component {
     console.log(this.state.staffs)
     return (
       <section className="section productbackground">
-        <section className="hero">
+        <section className="hero staff">
           <div className="hero-body">
-            <div className="container">
-              <h1 className="title">
+            <div className="container ">
+              <h1 className="title ">
         Meet The Crew
               </h1>
-              <h2 className="subtitle">
-        Hero subtitle
-              </h2>
             </div>
           </div>
         </section>

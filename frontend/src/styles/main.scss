@@ -6,6 +6,8 @@
 @import'staffForm';
 @import'navbar';
 @import'footer';
+@import'staffList';
+
 
 
 
@@ -26,7 +28,7 @@
 
 
 .navbar.isgreen {
-  background: #51fe00e0;
+  background: black;
 }
 
 .productbackground{
@@ -50,5 +52,29 @@ align-items: center;
   display: inline-flex;
 
   background: black;
+}
+.control.is-right{
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.a.navbar-item:active{
+   color: #51fe00cf;
+}
+.a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+  color: #51fe00cf;
+}
+
+.navbar-item{
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  color:  white;
+}
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+  background-color: black;
+}
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+  color: #51fe00cf;
 }
 $box-radius: 6px;

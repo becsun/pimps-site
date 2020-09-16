@@ -32,8 +32,6 @@ const ServiceDetail = (   props   ) => {
         {props.info === 'Highlights' && <h1>{props.name} {props.price}</h1>}
       </div>
     </div>
-
-
   )
 }
 

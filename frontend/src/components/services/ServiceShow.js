@@ -35,13 +35,13 @@ class ServiceShow extends React.Component {
     const { sortedServices } = this.state
     return (
       <section className="hero 2is-primary servicelistpage has-background-black">
-        <div className="hero-body">
+        <div className="hero-body is-fullheight pricelist">
           <div className="container serviceAlign">
             <h1 className="title servicetitle"> Services
             </h1>
-            <figure className="serviceimage image">
+            {/* <figure className="serviceimage image">
               <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600277665/Pimps-1178_wyyvv7.jpg" alt="julie"/>
-            </figure>
+            </figure> */}
             <div>
               {sortedServices && Object.entries(sortedServices).map(([serviceType, servicesInThisType])=> {
                 return <div className="serviceList" key={serviceType}>
@@ -53,8 +53,8 @@ class ServiceShow extends React.Component {
               })}
             </div>
           </div>
-          <Footer />
         </div>
+        <Footer />
       </section>
     )
   }

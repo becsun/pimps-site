@@ -3,23 +3,37 @@
   display: flex;
   padding-bottom: 5%;
 }
-.title.servicetitle{
-  display: flex;
+.title servicetitle{
+  // display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-  // margin-left: 5%;
+  margin-left: 5%;
 }
 .serviceHeading{
   display: flex;
   margin-top: 5%;
   align-content: center;
   text-align: center;
-  padding: 5%;
+  padding-top: 3%;
+
 
 }
 .serviceList{
   padding-top: 5%;
-  margin-left: -30%;
+  color: white;
+  font-size: 20px;
+
+}
+.pricelist{
+  display: flex;
+  background-image: url("https://res.cloudinary.com/do68wjft3/image/upload/v1600277410/Pimps-172_eztuic.jpg");
+  // opacity: 50%;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 80%;
+  // background-blend-mode: ;
+
 }
 // .serviceimage{
 //   position: absolute;

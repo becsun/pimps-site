@@ -26,8 +26,14 @@ const Home = () => {
                   <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600211471/Pimps-1457_uoz6im.jpg" alt="hair"/>
                 </figure>
               </div>
-              <div className="column is-half">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h1>
+              <div className="column is-half homefont">
+                <p>Located in the heart of shoreditch by spitafields market since 2008, here at pimps and pinups we pride ourselves on our unique style. Our goal is to make sure each individual client receives the care and attention their hair deserves. functioning on a ‘everyone is welcome’ no judgment policy.</p>
+                <br></br>
+                <p>We find that hair isn’t just a haircut, it’s a personality, it can be what makes your day go from a bad day to a good day. We strive to perfection and won’t accept anything less. You will find that our stylists will always take the best care of your mane, and do all in their power to maintain healthy conditioned hair, or to restore to locks you can be proud of.</p>
+                <br></br>
+                <p>We are a diverse bunch, from all around the world, just trying to fit in, and this is where we do. So whatever style you want we are positive we have the right stylist for you. From classic balayage to the craziest of colours. Don’t be afraid to be you, because we’re not. So book online or call to make an appointment. We look forward to seeing you!</p>
+                <br></br>
+                <p>Please let our reception team know if you require any special assistance upon your arrival and we will do our best to accommodate you.</p>
                 <div className="column">
                   <figure className="image is-200x200">
                     <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600211628/Pimps-1669_iewrbm.jpg" alt="hair" />
