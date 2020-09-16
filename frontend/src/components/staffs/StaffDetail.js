@@ -15,8 +15,7 @@ const StaffDetail = ({ name, favcut, image, id, bio, role }) => (
         </div>
         <div className="card-content">
           <h5 className="">{role}</h5>
-          <h5 className="">{favcut}</h5>
-          <h5 className="">{bio}</h5>
+          <h5 className="">Favourite Cut: {favcut}</h5>
         </div>
       </div>
     </Link>

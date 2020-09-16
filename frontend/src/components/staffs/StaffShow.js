@@ -34,10 +34,6 @@ class StaffShow extends React.Component {
             </div>
             <div className="column is-half">
               <h4 className="title is-4"><span role="img" aria-label="brush">💆🏻‍♀️</span>{staff.name}</h4>
-              <p>{staff.tastingNotes}</p>
-              <hr />
-              <h4 className="title is-4"><span role="img" aria-label="scissors">✄</span>{staff.favcut}</h4>
-              <hr />
               <p>{staff.role}</p>
               <hr />
               <h4 className="title is-4"><span role="img" aria-label="bio"></span> {staff.bio}</h4>

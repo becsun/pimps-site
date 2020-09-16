@@ -8,29 +8,30 @@ const ServiceDetail = (   props   ) => {
 
     <div>
       <div className="container is-fullhd">
-        {props.info === 'haircut' && <h1>{props.name} {props.price}</h1>}
+        {props.info === 'Haircut' && <h1>{props.name} {props.price}</h1>}
       </div>
       <div className="container is-widescreen">
-        {props.info === 'styling' && <h1>{props.name} {props.price}</h1>}
+        {props.info === 'Styling' && <h1>{props.name} {props.price}</h1>}
       </div>
       <div className="container is-widescreen">
-        {props.info === 'styling' && <h1>{props.name} {props.price}</h1>}
+        {props.info === 'Bleach' && <h1>{props.name} {props.price}</h1>}
       </div>
       <div className="container is-widescreen">
-        {props.info === 'tint' && <h1>{props.name} {props.price}</h1>}
+        {props.info === 'Tint' && <h1>{props.name} {props.price}</h1>}
       </div>
       <div className="container is-widescreen">
-        {props.info === 'balayage' && <h1>{props.name} {props.price}</h1>}
+        {props.info === 'Balayage' && <h1>{props.name} {props.price}</h1>}
       </div>
       <div className="container is-widescreen">
-        {props.info === 'kerastraight' && <h1>{props.name} {props.price}</h1>}
+        {props.info === 'Kerastraight' && <h1>{props.name} {props.price}</h1>}
       </div>
       <div className="container is-widescreen">
-        {props.info === 'treatment' && <h1>{props.name} {props.price}</h1>}
+        {props.info === 'Treatments' && <h1>{props.name} {props.price}</h1>}
+      </div>
+      <div className="container is-widescreen">
+        {props.info === 'Highlights' && <h1>{props.name} {props.price}</h1>}
       </div>
     </div>
-
-
 
 
   )

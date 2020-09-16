@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-const ProductDetail = ({ name, brand, image, id, use, hairtype }) => {
+const ProductDetail = ({ name, brand, image, id, hairtype }) => {
   return (
     <div className="column is-one-quarter-desktop is-one-third-tablet is-fullwidth">
       <Link to={`/products/${id}`}>
@@ -16,9 +16,9 @@ const ProductDetail = ({ name, brand, image, id, use, hairtype }) => {
             </figure>
           </div>
           <div className="card-content">
-            <h5 className="">{brand}</h5>
-            <h5 className="">{use}</h5>
-            <h5 className="">{hairtype}</h5>
+            <h5 className="">Brand: {brand}</h5>
+            {/* <h5 className="">{use}</h5> */}
+            <h5 className="">Suitable Hairtype: {hairtype}</h5>
           </div>
         </div>
       </Link>

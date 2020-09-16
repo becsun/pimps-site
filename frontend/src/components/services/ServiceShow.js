@@ -36,25 +36,24 @@ class ServiceShow extends React.Component {
     return (
       <section className="hero 2is-primary servicelistpage has-background-black">
         <div className="hero-body">
-          <div className="container">
-            <h1 className="title">
-        Hero title
+          <div className="container serviceAlign">
+            <h1 className="title servicetitle"> Services
             </h1>
-            <h2 className="subtitle">
-        Hero subtitle
-            </h2>
+            <figure className="serviceimage image">
+              <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600277665/Pimps-1178_wyyvv7.jpg" alt="julie"/>
+            </figure>
             <div>
               {sortedServices && Object.entries(sortedServices).map(([serviceType, servicesInThisType])=> {
-                return <div key={serviceType}>
-                  <h1>{serviceType }</h1>
+                return <div className="serviceList" key={serviceType}>
+                  <h1 className="serviceHeading">{serviceType }</h1>
                   {servicesInThisType.map(service => {
                     return <ServiceDetail key={service._id} {...service} />
                   })}
                 </div>
               })}
-              <Footer />
             </div>
           </div>
+          <Footer />
         </div>
       </section>
     )

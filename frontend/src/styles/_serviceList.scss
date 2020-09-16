@@ -1,4 +1,37 @@
 
-h1{
-  font-family: 'Lato', sans-serif;
+.serviceAlign{
+  display: flex;
+  padding-bottom: 5%;
 }
+.title.servicetitle{
+  display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+  // margin-left: 5%;
+}
+.serviceHeading{
+  display: flex;
+  margin-top: 5%;
+  align-content: center;
+  text-align: center;
+  padding: 5%;
+
+}
+.serviceList{
+  padding-top: 5%;
+  margin-left: -30%;
+}
+// .serviceimage{
+//   position: absolute;
+//   height: 100vh;
+// }
+// }
+// .serviceimage{
+//   display: flex;
+//   position: absolute;
+//   opacity: 9;
+//   height: 600px;
+//   width: 600px;
+//  justify-content: flex-end;
+
+// }

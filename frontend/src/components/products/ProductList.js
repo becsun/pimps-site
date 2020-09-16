@@ -42,7 +42,7 @@ class ProductList extends React.Component {
       // if (!this.state.filteredProducts) return null
       return (
         <div className="productbackground">
-          <h1 className="productbackground">Products we recommend for:</h1>
+          <h1 className="productbackground">What we would recommend for Locks:</h1>
           <ProductForm handleChange={this.handleChange}/>
           <section className="section has-background-black">
             <div className="container">
