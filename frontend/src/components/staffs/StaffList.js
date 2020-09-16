@@ -73,7 +73,7 @@ class StaffList extends React.Component {
           </div>
         </section>
         <StaffForm handleChange={this.handleChange}/>
-        <div className="container">
+        <div className="container crewTitle">
           <div className="columns is-multiline">
             {!this.state.filteredStaff && this.state.staffs.map(staff => (
               <StaffDetail key={staff._id} {...staff}/>

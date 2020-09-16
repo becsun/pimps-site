@@ -10,3 +10,13 @@
   text-align: center;
   background: black;
 }
+.navbar-item img {
+  max-height: 11rem;
+}
+
+div.navbar-menu.is-active{
+  background-color: black;
+}
+.navbar-burger{
+  color: white;
+}

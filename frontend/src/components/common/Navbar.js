@@ -24,7 +24,7 @@ render() {
       <div className="container ">
         <div className="navbar-brand">
           <Link to="/"className="navbar-item">
-            <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600295250/SVG/PimpsAndPinUps_Logo_White_axy0vs.svg" alt="logo" width="150" height="250"/>
+            <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600296257/SVG/PimpsAndPinUps_Logo_White_ryuwfl.svg" alt="logo" width="250" height="350"/>
           </Link>
           <span onClick={this.handleToggle} className={`navbar-burger ${this.state.isOpen ? 'is-active' : '' }`}>
             <span></span>
