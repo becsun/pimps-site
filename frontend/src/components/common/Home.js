@@ -36,7 +36,7 @@ const Home = () => {
                 <p>Please let our reception team know if you require any special assistance upon your arrival and we will do our best to accommodate you.</p>
                 <div className="column">
                   <figure className="image is-200x200">
-                    <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600211628/Pimps-1669_iewrbm.jpg" alt="hair" />
+                    <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600291536/Pimps-1669_iewrbm_edit_ukeu38.jpg" alt="hair" />
                   </figure>
                 </div>
               </div>

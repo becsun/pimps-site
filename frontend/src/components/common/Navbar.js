@@ -23,7 +23,10 @@ render() {
     <nav className="navbar isgreen ">
       <div className="container ">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item">Pimps & PinUps</Link>
+          <Link to="/"className="navbar-item" href="https://bulma.io">
+            <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600291373/PimpsAndPinUps_Logo_White_xwx8fd.png" width="112" height="48"/>
+          </Link>
+          <Link to="/" className="navbar-item" image src="https://res.cloudinary.com/do68wjft3/image/upload/v1600291373/PimpsAndPinUps_Logo_White_xwx8fd.png"></Link>
           <span onClick={this.handleToggle} className={`navbar-burger ${this.state.isOpen ? 'is-active' : '' }`}>
             <span></span>
             <span></span>
