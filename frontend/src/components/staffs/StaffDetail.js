@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const StaffDetail = ({ name, favcut, image, id, bio, role }) => (
+const StaffDetail = ({ name, favcut, image, id, role }) => (
   <div className="column is-one-quarter-desktop is-one-third-tablet is-fullwidth">
     <Link to={`/staffs/${id}`}>
       <div className="card outline box-radius">

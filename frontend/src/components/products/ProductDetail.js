@@ -8,7 +8,7 @@ const ProductDetail = ({ name, brand, image, id, hairtype }) => {
       <Link to={`/products/${id}`}>
         <div className="card">
           <div className="card-header">
-            <h4 className="card-header-title">{name}</h4>
+            <h4 className="card-header-title productTitle">{name}</h4>
           </div>
           <div className="card-image">
             <figure className="image image is-1by1">
@@ -18,7 +18,7 @@ const ProductDetail = ({ name, brand, image, id, hairtype }) => {
           <div className="card-content">
             <h5 className="">Brand: {brand}</h5>
             {/* <h5 className="">{use}</h5> */}
-            <h5 className="">Suitable Hairtype: {hairtype}</h5>
+            <h5 className="">Suitable Hair type: {hairtype}</h5>
           </div>
         </div>
       </Link>

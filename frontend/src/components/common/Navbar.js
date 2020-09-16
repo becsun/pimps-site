@@ -23,10 +23,9 @@ render() {
     <nav className="navbar isgreen ">
       <div className="container ">
         <div className="navbar-brand">
-          <Link to="/"className="navbar-item" href="https://bulma.io">
-            <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600291373/PimpsAndPinUps_Logo_White_xwx8fd.png" width="112" height="48"/>
+          <Link to="/"className="navbar-item">
+            <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600295250/SVG/PimpsAndPinUps_Logo_White_axy0vs.svg" alt="logo" width="150" height="250"/>
           </Link>
-          <Link to="/" className="navbar-item" image src="https://res.cloudinary.com/do68wjft3/image/upload/v1600291373/PimpsAndPinUps_Logo_White_xwx8fd.png"></Link>
           <span onClick={this.handleToggle} className={`navbar-burger ${this.state.isOpen ? 'is-active' : '' }`}>
             <span></span>
             <span></span>

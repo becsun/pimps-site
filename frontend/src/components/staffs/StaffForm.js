@@ -2,7 +2,7 @@ import React from 'react'
 // import { getAllStaff } from '../lib/api'
 
 
-const StaffForm = ({ handleChange}) => {
+const StaffForm = ({ handleChange }) => {
   return (
     <div className="control is-right">
       <div className="select is-dark is-multiple bar is-rounded">

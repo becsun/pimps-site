@@ -25,7 +25,7 @@ class ProductShow extends React.Component {
     return (
       <section className="section has-background-white">
         <div className="container">
-          <h2 className="title has-text-centered">{product.name}</h2>
+          <h2 className="title has-text-centered productName">{product.name}</h2>
           <hr />
           <div className="columns">
             <div className="column is-half">
@@ -34,10 +34,9 @@ class ProductShow extends React.Component {
               </figure>
             </div>
             <div className="column is-half">
-              <h4 className="title is-4"><span role="img" aria-label="brush">💆🏻‍♀️</span>{product.name}</h4>
-              <p>{product.brand}</p>
+              <h4 className="title is-4 ">Made By: {product.brand}</h4>
               <hr />
-              <h4 className="title is-4">Tell me more: {product.use}</h4>
+              <h4 className="title is-4">Tell me more: <p className="smallText">{product.use}</p></h4>
             </div>
           </div>
         </div>
