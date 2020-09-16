@@ -1,14 +1,16 @@
 import React from 'react'
-import MapGL, { Marker } from 'react-map-gl'
+
 import 'mapbox-gl/dist/mapbox-gl.css'
 import Footer from './Footer'
-import Messages from './Messages'
+import ReactMapGL, {  NavigationControl, Marker } from 'react-map-gl'
+
+
 
 
 class ContactPage extends React.Component {
   state = {
     viewport: {
-      height: '100vh',
+      height: '80vh',
       width: '100vh',
       latitude: 51.518,
       longitude: -0.076,
@@ -19,19 +21,19 @@ class ContactPage extends React.Component {
 
   onViewportChange = viewport => this.setState({ viewport })
 
-  
 
   render() {
     return (
       <section has-background-black>
         <h1 className="contact productbackground">LOCATION</h1>
         {/* //put map on page */}
-        <div className="contact productbackground" >
-          <MapGL
+        <div className="contact productbackground map" >
+
+          <ReactMapGL
             {...this.state.viewport}
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
             mapStyle='mapbox://styles/mapbox/dark-v10'
-            onViewportChange={this.onViewportChange}
+            onViewportChange={viewport => this.setState({ viewport })}
           >
             <Marker
               latitude={51.520073}
@@ -39,9 +41,12 @@ class ContactPage extends React.Component {
             >
               <div className="marker" />
             </Marker>
-          </MapGL>
+            <div className="buttons">
+              <NavigationControl />
+            </div>
+
+          </ReactMapGL>
         </div>
-        <Messages />
         <Footer />
 
       </section>

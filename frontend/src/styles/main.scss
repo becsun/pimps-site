@@ -40,4 +40,15 @@
   text-align: center;
 }
 
+.map{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.buttons {
+  display: inline-flex;
+
+  background: black;
+}
 $box-radius: 6px;
