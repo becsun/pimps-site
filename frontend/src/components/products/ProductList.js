@@ -54,6 +54,9 @@ class ProductList extends React.Component {
                 {this.state.filteredProducts && this.state.filteredProducts.map(product => (
                   <ProductDetail key={product._id} {...product}/>
                 ))}
+                {/* {this.state.filteredProducts === 'searchText' && this.state.filteredProducts.map(product => (
+                  <ProductDetail key={product._id} {...product}/> */}
+                ))}
               </div>
             </div>
             <Footer />
