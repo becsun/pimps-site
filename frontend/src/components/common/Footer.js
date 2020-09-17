@@ -12,17 +12,12 @@ const Footer = () => {
         <h2>Opening hours
         10am – 8pm weekdays
         10am – 6pm weekends</h2>
-
+        <a className="instagram" href="https://res.cloudinary.com/do68wjft3/image/upload/v1600342706/83b5f2a86fa0ec9f938664da94a9bc55-instagram-silhouette-stroke-logo-by-vexels_hqmd56.png"/>
         <Link to={'/terms'}>
           <h2>Terms and Conditions</h2>
         </Link>
       </div>
     </div>
-
-  // {/* <button onClick={this.handleZoomIn}>✚</button>
-  // <button>−</button> */}
-
-
 
   )
 }

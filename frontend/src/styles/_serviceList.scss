@@ -1,38 +1,30 @@
-
 .title.servicetitle{
   font-family: 'Balsamiq Sans', cursive;
   color: #51fe00cf;
-  font-size: 50px;
-  // padding-bottom: -15%;
-
+  font-size: 40px;
+  padding-bottom: -10%;
 }
 .serviceHeading{
   display: flex;
-
   align-content: center;
   text-align: center;
-
   color: #51fe00cf;
   font-family: 'Balsamiq Sans', cursive;
-
-
+  font-size:25px;
 }
 .serviceList{
   padding-top: 3%;
   color: white;
   font-size: 20px;
   font-family: 'Balsamiq Sans', cursive;
-
 }
 .pricelist{
   display: flex;
   background-image: url("https://res.cloudinary.com/do68wjft3/image/upload/v1600277410/Pimps-172_eztuic.jpg");
-  // opacity: 50%;
   background-size: 50%;
   background-repeat: no-repeat;
   background-position-y: 60%;
   background-position-x: 80%;
-  // background-blend-mode: ;
 }
 .serviceAlign{
   padding-left: 40px;

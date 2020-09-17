@@ -20,7 +20,6 @@ class ProductList extends React.Component {
     }
     console.log()
     console.log(this.state.products)
-
   }
 
   handleChange = (event) =>{

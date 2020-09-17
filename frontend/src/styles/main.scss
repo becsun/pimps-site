@@ -11,8 +11,6 @@
 @import'Error';
 
 
-
-
 .card {
   height: 100%;
   display: flex;
@@ -21,38 +19,28 @@
 .card-image{
   background-color: white;
 }
-
 .img.logo{
   background-image: url("../styles/images/banner-logopng__567x417_q85_crop_upscale.png");
 }
-
-
-
-
 .navbar.isgreen {
   background: black;
 }
-
 .productbackground{
   background-color: black;
 }
-
 .section.has-background-black{
   background-color: black;
 }
 .card-header-title{
   text-align: center;
 }
-
 .map{
 display: flex;
 justify-content: center;
 align-items: center;
 }
-
 .buttons {
   display: inline-flex;
-
   background: black;
 }
 .control.is-right{
@@ -60,14 +48,12 @@ align-items: center;
   justify-content: center;
   padding-top: 3%;
 }
-
 .a.navbar-item:active{
    color: #51fe00cf;
 }
 .a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
   color: #51fe00cf;
 }
-
 .navbar-item{
   font-family: 'Righteous', cursive;
   font-size: 30px;
@@ -79,4 +65,16 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
   color: #51fe00cf;
 }
+.card{
+ border-radius: 5%;
+}
+.card:hover {
+  border-radius: 5%;
+  opacity:80%;
+ }
+ .card:active {
+  border-radius: 5%;
+  opacity: 90%;
+ }
+
 $box-radius: 6px;

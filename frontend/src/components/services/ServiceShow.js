@@ -5,13 +5,6 @@ import Footer from '../common/Footer'
 class ServiceShow extends React.Component {
   state = {
     services: []
-    // haircut: [],
-    // styling: [],
-    // highlights: [],
-    // bleach: [],
-    // tint: [],
-    // treatment: [],
-    // kerastraight: []
   }
   async componentDidMount() {
     try {

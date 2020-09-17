@@ -17,7 +17,6 @@ const ProductDetail = ({ name, brand, image, id, hairtype }) => {
           </div>
           <div className="card-content">
             <h5 className="">Brand: {brand}</h5>
-            {/* <h5 className="">{use}</h5> */}
             <h5 className="">Suitable Hair type: {hairtype}</h5>
           </div>
         </div>

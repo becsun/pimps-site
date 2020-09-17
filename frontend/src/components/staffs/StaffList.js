@@ -55,9 +55,6 @@ class StaffList extends React.Component {
     this.setState({ filteredStaff })
   }
 
-
-
-
   render() {
     if (!this.state.staffs) return null
     console.log(this.state.staffs)
