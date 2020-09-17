@@ -6,14 +6,14 @@ const StaffForm = ({ handleChange }) => {
       <div className="select is-dark is-multiple bar is-rounded">
         <select onChange={ handleChange }>
           <option onChange={ handleChange } value="any" className="searchText">  What do you need? Click here to find your stylist!</option>
-          <option onChange={handleChange} value="Haircut">haircut</option>
-          <option onChange={handleChange} value="Styling">styling</option>
-          <option onChange={handleChange} value="Bleach">bleach</option>
-          <option onChange={handleChange} value="Balayage">balayage</option>
-          <option onChange={handleChange} value="Treatment">treatment</option>
-          <option onChange={handleChange} value="Tint">tint</option>
-          <option onChange={handleChange} value="Kerastraight">kerastraight</option>
-          <option onChange={handleChange} value="Highlights">highlights</option>
+          <option onChange={handleChange} value="Haircut">Haircut</option>
+          <option onChange={handleChange} value="Styling">Styling</option>
+          <option onChange={handleChange} value="Bleach">Bleach</option>
+          <option onChange={handleChange} value="Balayage">Balayage</option>
+          <option onChange={handleChange} value="Treatments">Treatments</option>
+          <option onChange={handleChange} value="Tint">Tint</option>
+          <option onChange={handleChange} value="Kerastraight">Kerastraight</option>
+          <option onChange={handleChange} value="Highlights">Highlights</option>
         </select>
       </div>
     </div>
