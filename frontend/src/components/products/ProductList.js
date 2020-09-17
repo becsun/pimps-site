@@ -24,10 +24,13 @@ class ProductList extends React.Component {
   }
 
   handleChange = (event) =>{
-    this.filterProducts(event.target.value)
-    console.log(event.target.value)
+    if (event.target.value === 'all'){
+      this.setState({ filteredProducts: null })
+    } else {
+      this.filterProducts(event.target.value)
+      console.log(event.target.value)
+    }
   }
-
 
     filterProducts = (selected) => {
       const { products } = this.state

@@ -6,7 +6,7 @@ const ProductForm = ({ handleChange }) => {
     <div className="control is-right">
       <div className="select is-dark is-multiple bar is-rounded">
         <select onChange={handleChange}>
-          <option className="searchText">Click On An Option To Find The Right Product For You!</option>
+          <option className="searchText" value="all">Click On An Option To Find The Right Product For You!</option>
           <option onChange={handleChange} value="Damaged">Damaged</option>
           <option onChange={handleChange} value="All Types">All Types</option>
           <option onChange={handleChange} value="Fine">Fine</option>

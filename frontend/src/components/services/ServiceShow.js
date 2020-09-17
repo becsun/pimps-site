@@ -39,9 +39,6 @@ class ServiceShow extends React.Component {
           <div className="container serviceAlign">
             <h1 className="title servicetitle"> Services
             </h1>
-            {/* <figure className="serviceimage image">
-              <img src="https://res.cloudinary.com/do68wjft3/image/upload/v1600277665/Pimps-1178_wyyvv7.jpg" alt="julie"/>
-            </figure> */}
             <div>
               {sortedServices && Object.entries(sortedServices).map(([serviceType, servicesInThisType])=> {
                 return <div className="serviceList" key={serviceType}>
