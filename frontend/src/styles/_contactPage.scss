@@ -2,15 +2,22 @@
 //need to change to logo
 .marker{
   // background-image: url("https://pimpsandpinups.com/media/filer_public_thumbnails/filer_public/a8/99/a8996fa1-308f-4510-ab9e-c4a8ca3ad44d/banner-logopng__567x417_q85_crop_upscale.png__567x417_q85_crop_subsampling-2_upscale.png");
-  background-color: black;
+  background-color: #51fe00cf;
   height:12px;
   width: 12px;
   border-radius:100%;
 }
 .contactPage{
-
+  padding-top:25px;
   background: black;
   color: white;
   font-size: 30px;
-
+  align-items: center;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 70px;
+  padding-bottom: 10px;
+}
+.map{
+  padding-bottom: 60px;
 }

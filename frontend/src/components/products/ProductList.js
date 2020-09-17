@@ -43,7 +43,7 @@ class ProductList extends React.Component {
       return (
         <div className="productbackground">
           <h1 className="title crewPageTitle">
-        Productss
+        Products
           </h1>
           <ProductForm handleChange={this.handleChange}/>
           <section className="section has-background-black">
