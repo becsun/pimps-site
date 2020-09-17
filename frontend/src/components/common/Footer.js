@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {   faInstagram } from '@fortawesome/free-brands-svg-icons'
+
 const Footer = () => {
   return (
 
@@ -10,13 +13,19 @@ const Footer = () => {
         <h2> 0207 426 2121</h2>
         <a href={'mailto: london@pimpsandpinups.com'}>london@pimpsandpinups.com</a>
         <h2>Opening hours
-        10am – 8pm weekdays
-        10am – 6pm weekends</h2>
-        <a className="instagram" href="https://res.cloudinary.com/do68wjft3/image/upload/v1600342706/83b5f2a86fa0ec9f938664da94a9bc55-instagram-silhouette-stroke-logo-by-vexels_hqmd56.png"/>
+        10am – 8pm Weekdays
+        10am – 6pm Weekends</h2>
+        {/* <a className="instagram" href="https://res.cloudinary.com/do68wjft3/image/upload/v1600350372/WhatsApp_Image_2020-09-17_at_13.49.16_2_nalwsi.jpg" alt="pic"/> */}
         <Link to={'/terms'}>
           <h2>Terms and Conditions</h2>
         </Link>
+        <a target='_blank' href="https://www.instagram.com/pimpsandpinups/" rel=" noopener noreferrer"
+          className="instagram"
+        >
+          <FontAwesomeIcon  icon={faInstagram} size="2x" />
+        </a>
       </div>
+
     </div>
 
   )
