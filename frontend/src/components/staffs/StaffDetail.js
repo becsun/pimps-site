@@ -6,7 +6,7 @@ const StaffDetail = ({ name, favcut, image, id, role }) => (
     <Link to={`/staffs/${id}`}>
       <div className="card outline box-radius">
         <div className="card-header box-radius">
-          <h4 className="card-header-title">{name}</h4>
+          <h4 className="card-header-title crewDaetails">{name}</h4>
         </div>
         <div className="card-image">
           <figure className="image">

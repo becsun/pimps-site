@@ -66,7 +66,7 @@ class StaffList extends React.Component {
         <section className="hero staff">
           <div className="hero-body">
             <div className="container ">
-              <h1 className="title ">
+              <h1 className="title crewPageTitle">
         Meet The Crew
               </h1>
             </div>

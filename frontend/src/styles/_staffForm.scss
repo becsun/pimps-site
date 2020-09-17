@@ -1,11 +1,23 @@
 .select{
-  padding-bottom: 3%;
-  padding-top: -20%;
+  padding-bottom: 5%;
 }
-.title{
+.crewPageTitle{
   align-items: center;
   text-align: center;
   font-family: 'Righteous', cursive;
   font-size: 70px;
   color:white;
+}
+.crewShowTitle {
+  font-family: 'Righteous', cursive;
+  font-size: 50px;
+}
+.roleTitle{
+  padding-top: 60px;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 30px;
+}
+.crewBio{
+  padding-top: 20px;
+  font-size: 30px;
 }

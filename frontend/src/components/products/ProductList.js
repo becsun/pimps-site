@@ -42,6 +42,9 @@ class ProductList extends React.Component {
       // if (!this.state.filteredProducts) return null
       return (
         <div className="productbackground">
+          <h1 className="title crewPageTitle">
+        Productss
+          </h1>
           <ProductForm handleChange={this.handleChange}/>
           <section className="section has-background-black">
             <div className="container">
@@ -53,8 +56,8 @@ class ProductList extends React.Component {
                 {this.state.filteredProducts && this.state.filteredProducts.map(product => (
                   <ProductDetail key={product._id} {...product}/>
                 ))}
-                {/* {this.state.filteredProducts === 'searchText' && this.state.filteredProducts.map(product => (
-                  <ProductDetail key={product._id} {...product}/> */}
+                {this.state.filteredProducts === 'searchText' && this.state.filteredProducts.map(product => (
+                  <ProductDetail key={product._id} {...product}/>
                 ))}
               </div>
             </div>

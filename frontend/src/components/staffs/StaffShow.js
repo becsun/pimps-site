@@ -24,7 +24,7 @@ class StaffShow extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <h2 className="title has-text-centered">{staff.name}</h2>
+          <h2 className="title has-text-centered crewShowTitle">{staff.name}</h2>
           <hr />
           <div className="columns">
             <div className="column is-half">
@@ -32,11 +32,10 @@ class StaffShow extends React.Component {
                 <img src={staff.image} alt={staff.name} />
               </figure>
             </div>
-            <div className="column is-half">
-              <h4 className="title is-4"><span role="img" aria-label="brush">💆🏻‍♀️</span>{staff.name}</h4>
-              <p>{staff.role}</p>
+            <div className="column is-half roleTitle">
+              <p>Position in the salon: {staff.role}</p>
               <hr />
-              <h4 className="title is-4"><span role="img" aria-label="bio"></span> {staff.bio}</h4>
+              <h4 className="title is-4 crewBio"><span role="img" aria-label="bio"></span> {staff.bio}</h4>
               <hr />
             </div>
           </div>
