@@ -10,6 +10,7 @@ django = "*"
 pylint = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
+django_heroku = "*"
 
 [requires]
 python_version = "3.8"
