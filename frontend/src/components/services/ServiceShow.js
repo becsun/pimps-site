@@ -35,7 +35,7 @@ class ServiceShow extends React.Component {
             <div>
               {sortedServices && Object.entries(sortedServices).map(([serviceType, servicesInThisType])=> {
                 return <div className="serviceList" key={serviceType}>
-                  <h1 className="serviceHeading">{serviceType }</h1>
+                  <h1 className="serviceHeading">{serviceType} </h1>
                   {servicesInThisType.map(service => {
                     return <ServiceDetail key={service._id} {...service} />
                   })}

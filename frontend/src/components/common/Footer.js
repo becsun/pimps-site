@@ -24,8 +24,9 @@ const Footer = () => {
         >
           <FontAwesomeIcon  icon={faInstagram} size="2x" />
         </a>
+        <p className="credits">© 2020 All Rights Reserverd. Site By Bec Sun</p>
+        <p className="credits">© Photos by</p><a className="credits" href="https://www.instagram.com/mikeypdodd" alt="pic">@mikeypdodd</a>
       </div>
-
     </div>
 
   )

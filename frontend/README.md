@@ -7,3 +7,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Table of Content
+
+# Pimps and Pinups Hair Salon Website
+
+"Bec Sun"

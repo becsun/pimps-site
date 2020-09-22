@@ -21,11 +21,7 @@ class ContactPage extends React.Component {
   render() {
     return (
       <section className="has-background-black">
-        <h1 className="contactPage">LOCATION</h1>
-        {/* <div className="imageSize">
-          <img className="pimps" src="https://res.cloudinary.com/do68wjft3/image/upload/v1600278059/Pimps-2620_yhcgwg.jpg" alt="salon"/>
-        </div> */}
-
+        <h1 className="contactPage">Find Us Here</h1>
         {/* //put map on page */}
         <div className="contact productbackground map" >
           <ReactMapGL

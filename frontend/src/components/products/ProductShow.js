@@ -33,10 +33,10 @@ class ProductShow extends React.Component {
                 <img src={product.image} alt={product.name} />
               </figure>
             </div>
-            <div className="column is-half">
+            <div className="column is-one-third">
               <h4 className="title is-4 ">Made By: {product.brand}</h4>
               <hr />
-              <h4 className="title is-4">Tell me more: <p className="smallText">{product.use}</p></h4>
+              <h4 className="title is-4">Tell me more:</h4> <p className="smallText">{product.use}</p>
             </div>
           </div>
         </div>

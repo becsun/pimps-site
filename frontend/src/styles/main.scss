@@ -9,6 +9,7 @@
 @import'staffList';
 @import'terms';
 @import'Error';
+@import'credits';
 
 
 .card {
@@ -67,18 +68,35 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 .card{
  border-radius: 5%;
+ border-width: 2%;
+ border-style: solid;
+ border-color: white;
 }
 .card:hover {
   border-radius: 5%;
-  opacity:80%;
+  opacity:70%;
  }
  .card:active {
   border-radius: 5%;
   opacity: 90%;
  }
+ .card-shadow{
+  color: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)
+ }
 
 .fa-home{
   color: white;
+}
+.select:hover{
+  opacity: 70%;
+ }
+
+ .select.is-dark select {
+  font-family: 'Righteous', cursive;
+  font-size: 22px;
+ }
+.smallText{
+  font-size:22px;
 }
 
 $box-radius: 6px;

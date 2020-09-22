@@ -27,12 +27,12 @@ class StaffShow extends React.Component {
           <h2 className="title has-text-centered crewShowTitle">{staff.name}</h2>
           <hr />
           <div className="columns">
-            <div className="column is-half">
+            <div className="column is-one-quarter">
               <figure className="image">
                 <img src={staff.image} alt={staff.name} />
               </figure>
             </div>
-            <div className="column is-half roleTitle">
+            <div className="column is-one-quater roleTitle">
               <p>Position in the salon: {staff.role}</p>
               <hr />
               <h4 className="title is-4 crewBio"><span role="img" aria-label="bio"></span> {staff.bio}</h4>
