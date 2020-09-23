@@ -7,29 +7,29 @@ const baseUrl = '/api'
 //----Staffs
 //-------
 export const getAllStaff = () => {
-  return axios.get(`${baseUrl}/staffs`)
+  return axios.get(`${baseUrl}/staffs/`)
 }
 
 export const getSingleStaff = id => {
-  return axios.get(`${baseUrl}/staffs/${id}`)
+  return axios.get(`${baseUrl}/staffs/${id}/`)
 }
 
 //----Products
 //--------
 export const getAllProducts = () => {
-  return axios.get(`${baseUrl}/products`)
+  return axios.get(`${baseUrl}/products/`)
 }
 
 export const getSingleProduct = id => {
-  return axios.get(`${baseUrl}/products/${id}`)
+  return axios.get(`${baseUrl}/products/${id}/`)
 }
 
 //---Services
 //---------
 export const getAllServices = () => {
-  return axios.get(`${baseUrl}/services`)
+  return axios.get(`${baseUrl}/services/`)
 }
 
 export const getSingleService = id => {
-  return axios.get(`${baseUrl}/services/${id}`)
+  return axios.get(`${baseUrl}/services/${id}/`)
 }
