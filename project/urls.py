@@ -18,9 +18,9 @@ from django.urls import path, include, re_path
 from .views import index
 
 urlpatterns = [
-    path('api/admin/', admin.site.urls),
-    path('api/staffs/', include('staff.urls')),
-    path('api/products/', include('product.urls')),
-    path('api/services/', include('service.urls')),
+    path('api/admin', admin.site.urls),
+    path('api/staffs', include('staff.urls')),
+    path('api/products', include('product.urls')),
+    path('api/services', include('service.urls')),
     re_path(r'^.*$', index),
 ]
