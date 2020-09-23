@@ -11,7 +11,7 @@ export const getAllStaff = () => {
 }
 
 export const getSingleStaff = id => {
-  return axios.get(`${baseUrl}/staffs/${id}/`)
+  return axios.get(`${baseUrl}/staffs/${id}`)
 }
 
 //----Products
@@ -21,7 +21,7 @@ export const getAllProducts = () => {
 }
 
 export const getSingleProduct = id => {
-  return axios.get(`${baseUrl}/products/${id}/`)
+  return axios.get(`${baseUrl}/products/${id}`)
 }
 
 //---Services
@@ -31,5 +31,5 @@ export const getAllServices = () => {
 }
 
 export const getSingleService = id => {
-  return axios.get(`${baseUrl}/services/${id}/`)
+  return axios.get(`${baseUrl}/services/${id}`)
 }
