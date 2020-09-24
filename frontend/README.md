@@ -1,6 +1,3 @@
-
-
-
  # General Assembly | SEI-49 -project-four
 
 ![homepage](readmeAssets/homepage.gif)
